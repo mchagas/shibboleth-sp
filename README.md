@@ -1,6 +1,6 @@
 # Shibboleth Service Provider
 
-This repository are a helper to install and configure [Shibboleth] Service Provider.
+This repository is a helper to install and configure [Shibboleth] Service Provider.
 
 [Internet2] has been contributing Shibboleth development, but this version build from [Switch]
 

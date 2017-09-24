@@ -22,6 +22,7 @@ RUN apt-get -y install --install-recommends shibboleth
 
 COPY etc-shibboleth /etc/shibboleth/
 COPY sites-available /etc/apache2/sites-available/
+COPY var-www /var/www/
 COPY entrypoint.sh /usr/local/bin/
 
 

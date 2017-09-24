@@ -20,7 +20,7 @@ $ docker build --tag="organization/image-name" "Dockerfile-path"
 
 Example:
 ```
-$ docker build --tag="skalldihor/shibboleth-sp2.6" docker-shibboleth-sp
+$ docker build --tag="gidlab/shibboleth-sp2.6" docker-shibboleth-sp
 ```
 
 ### Run Container
@@ -33,21 +33,8 @@ $ docker run -d --name="container-name" -p "HostPort:ContainerPort" "tagname"
 
 Example
 ```
-$ docker run -d --name="Shibboleth-SP-2.6" -p 80:80 -p 443:443 skalldihor/shibboleth-sp2.6
+$ docker run -d --name="Shibboleth SP 2.6" -p 80:80 -p 443:443 gidlab/shibboleth-sp2.6
 ```
-
-## Apache
-
-## Application
-
-
-## Todo's
-
-- [ ] Write en_US and pt_BR documetation.
-- [ ] Apache configure
-- [ ] Python Application
-
-
 [Internet2]: https://www.internet2.edu/products-services/trust-identity/shibboleth/
 [Shibboleth]: https://wiki.shibboleth.net/confluence/#all-updates
 [Switch]: https://www.switch.ch/

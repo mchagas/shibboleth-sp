@@ -1,6 +1,7 @@
 #/bin/bash
 
-sudo /etc/init.d/apache2 start
+service apache2 restart
 
-sudo /etc/init.d/shibd start
+service shibd restart
 
+while true; do sleep 30; done;

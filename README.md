@@ -1,8 +1,7 @@
 # Shibboleth Service Provider
 
 This repository is a helper to install and configure [Shibboleth] Service Provider.
-
-[Internet2] has been contributing Shibboleth development, but this version build from [Switch]
+Esse repositório serve como ajuda para instalar e configurar um Provedor de Serviço (SP) [Shibboleth]. Essa versão utiliza o Shibboleth SP empacotado pela [Switch] para Debian/Ubuntu, diferentemente da versão da [UniconLabs] que usa o pacote oficial para Red Hat/CentOS.
 
 ## Shibboleth
 

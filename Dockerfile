@@ -35,9 +35,7 @@ RUN  chmod 0700 /usr/local/bin/entrypoint.sh
 RUN a2enmod ssl headers rewrite \
  && a2ensite 000-default.conf shibboleth2.conf
 
+ENTRYPOINT ["sh", "/usr/local/bin/entrypoint.sh"]
+
 EXPOSE 80
 EXPOSE 443
-
-#CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
-
-CMD /usr/local/bin/entrypoint.sh

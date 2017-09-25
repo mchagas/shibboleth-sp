@@ -10,7 +10,7 @@ function IdPSelectUIParms(){
     this.defaultLogo = 'flyingpiglogo.jpg';
     this.defaultLogoWidth = 90;
     this.defaultLogoHeight = 80 ;
-    this.defaultReturn = "https://${SERVER_NAME}/Shibboleth.sso/DS?SAMLDS=1&target=https://${SERVER_NAME}/secure";
+    this.defaultReturn = "https://sp2-openam.gidlab.rnp.br/Shibboleth.sso/DS?SAMLDS=1&target=https://sp2-openam.gidlab.rnp.br/secure";
     // If non null, then the default place to send users who are not
     // Approaching via the Discovery Protocol for example
     //this.defaultReturn = "https://example.org/Shibboleth.sso/DS?SAMLDS=1&target=https://example.org/secure";

@@ -27,10 +27,10 @@ COPY entrypoint.sh /usr/local/bin/
 
 
 # Permissions
-RUN shib-keygen -f -u _shibd -h sp2-openam.gidlab.rnp.br -y 3 -e https://sp2-openam.gidlab.rnp.br/shibboleth -o /etc/shibboleth/ \
- && chmod 0700 /usr/local/bin/entrypoint.sh
+RUN shib-keygen -f -u _shibd -h sp2-openam.gidlab.rnp.br -y 3 -e https://sp2-openam.gidlab.rnp.br/shibboleth -o /etc/shibboleth/
+RUN  chmod 0700 /usr/local/bin/entrypoint.sh
+# && chmod 0600 /etc/apache2/ssl
 # && chmod 0700 -R /etc/shibboleth \
-# && chmod 0700 -R /etc/apache2/sites-enabled/
 
 RUN a2enmod ssl headers rewrite \
  && a2ensite 000-default.conf shibboleth2.conf

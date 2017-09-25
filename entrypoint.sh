@@ -1,7 +1,6 @@
 #/bin/bash
 
-service apache2 restart
+apache2 &&
+shib &&
 
-service shibd restart
-
-while true; do sleep 30; done;
+# while true; do sleep 30; done;

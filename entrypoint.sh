@@ -1,6 +1,6 @@
 #/bin/bash
 
-apache2 &&
-shib &&
+/usr/sbin/apache2ctl -D FOREGROUND &&
 
-# while true; do sleep 30; done;
+/etc/init.d/shibd restart&&
+

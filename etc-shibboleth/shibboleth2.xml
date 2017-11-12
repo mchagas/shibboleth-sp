@@ -15,7 +15,7 @@
 <!--
             <SSO discoveryProtocol="SAMLDS" ECP="true" discoveryURL="https://ds.cafeexpresso.rnp.br/WAYF.php">
 -->
-	    <SSO discoveryProtocol="SAMLDS" ECP="true" discoveryURL="https://sp-python.cafeexpresso.rnp.br/Shibboleth.sso/DS">
+	    <SSO discoveryProtocol="SAMLDS" ECP="true" discoveryURL="https://sp2-openam.gidlab.rnp.br/Shibboleth.sso/DS">
             SAML2 SAML1
             </SSO>
             <SessionInitiator type="Chaining" Location="/DS" id="DS" relayState="cookie">
@@ -48,7 +48,7 @@
         <AttributeFilter type="XML" validate="true" path="attribute-policy.xml"/>
         <CredentialResolver type="File" key="/etc/shibboleth/sp-key.pem"
                             certificate="/etc/shibboleth/sp-cert.pem"
-							keyName="${HOSTNAME}"/>
+							keyName="sp2-openam"/>
  
     </ApplicationDefaults>
 
